@@ -1,7 +1,7 @@
-import i18next from "./translation/config.translation";
 import { createRoot } from "react-dom/client";
 import { I18nextProvider } from "react-i18next";
-import App from "./app/views/app-view/AppView.tsx";
+import { App } from "./app/views/app-view/AppView.tsx";
+import i18next from "./translation/config.translation";
 
 const root: any = document.getElementById("root");
 
