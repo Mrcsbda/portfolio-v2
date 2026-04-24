@@ -1,0 +1,80 @@
+:root {
+    /* Purple palette — warm & soft */
+    --pu-50:  #f5f0ff;
+    --pu-100: #ede5ff;
+    --pu-200: #ddd0ff;
+    --pu-300: #c4acff;
+    --pu-400: #a880f8;
+    --pu-500: #8f5cf0;   /* primary */
+    --pu-600: #7840d4;
+    --pu-700: #6230b0;
+    --pu-800: #4e2490;
+    --pu-900: #3a1a6e;
+
+    /* Accent — warm rose for contrast */
+    --ac-300: #fca5a5;
+    --ac-400: #f87171;
+    --ac-500: #ef4444;
+
+    /* Teal accent */
+    --te-300: #5eead4;
+    --te-400: #2dd4bf;
+    --te-500: #14b8a6;
+
+    /* Amber accent */
+    --am-300: #fcd34d;
+    --am-400: #fbbf24;
+
+    /* Glass & effects */
+    --glass-bg-dark:    rgba(18, 12, 34, 0.55);
+    --glass-bg-light:   rgba(255, 255, 255, 0.62);
+    --glass-border-dark: rgba(167, 128, 248, 0.18);
+    --glass-border-light: rgba(143, 92, 240, 0.22);
+    --glass-blur: 18px;
+  }
+
+  [data-theme="dark"] {
+    --bg:       #0d0818;
+    --bg-2:     #120d22;
+    --bg-3:     #1a1230;
+    --surface:  rgba(26, 18, 48, 0.7);
+    --text-1:   #f0eaff;
+    --text-2:   #c4b8e0;
+    --text-3:   #8c7aad;
+    --accent:   var(--pu-400);
+    --accent-2: var(--pu-300);
+    --accent-glow: rgba(168, 128, 248, 0.25);
+    --glass-bg:     var(--glass-bg-dark);
+    --glass-border: var(--glass-border-dark);
+    --divider:  rgba(167, 128, 248, 0.12);
+    --tag-bg:   rgba(168, 128, 248, 0.12);
+    --tag-text: var(--pu-300);
+    --badge-bg: rgba(168, 128, 248, 0.15);
+    --dot:      var(--pu-500);
+    --nav-bg:   rgba(13, 8, 24, 0.82);
+    --shadow-card: 0 8px 40px rgba(0,0,0,0.45), 0 2px 8px rgba(0,0,0,0.3);
+    --shadow-glow: 0 0 40px rgba(168, 128, 248, 0.12);
+  }
+
+  [data-theme="light"] {
+    --bg:       #f8f5ff;
+    --bg-2:     #f0eaff;
+    --bg-3:     #e9e0ff;
+    --surface:  rgba(245, 240, 255, 0.8);
+    --text-1:   #1e1035;
+    --text-2:   #4a3872;
+    --text-3:   #7a64a8;
+    --accent:   var(--pu-600);
+    --accent-2: var(--pu-700);
+    --accent-glow: rgba(120, 64, 212, 0.15);
+    --glass-bg:     var(--glass-bg-light);
+    --glass-border: var(--glass-border-light);
+    --divider:  rgba(143, 92, 240, 0.15);
+    --tag-bg:   rgba(143, 92, 240, 0.1);
+    --tag-text: var(--pu-700);
+    --badge-bg: rgba(143, 92, 240, 0.12);
+    --dot:      var(--pu-600);
+    --nav-bg:   rgba(248, 245, 255, 0.88);
+    --shadow-card: 0 4px 24px rgba(100, 60, 180, 0.12), 0 1px 4px rgba(100, 60, 180, 0.08);
+    --shadow-glow: 0 0 40px rgba(143, 92, 240, 0.08);
+  }
