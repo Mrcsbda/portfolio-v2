@@ -1,36 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap");
+
 :root {
-  /* Purple palette — warm & soft */
   --pu-50: #f5f0ff;
   --pu-100: #ede5ff;
   --pu-200: #ddd0ff;
   --pu-300: #c4acff;
   --pu-400: #a880f8;
-  --pu-500: #8f5cf0; /* primary */
+  --pu-500: #8f5cf0;
   --pu-600: #7840d4;
   --pu-700: #6230b0;
   --pu-800: #4e2490;
   --pu-900: #3a1a6e;
 
-  /* Accent — warm rose for contrast */
   --ac-300: #fca5a5;
   --ac-400: #f87171;
   --ac-500: #ef4444;
 
-  /* Teal accent */
   --te-300: #5eead4;
   --te-400: #2dd4bf;
   --te-500: #14b8a6;
 
-  /* Amber accent */
   --am-300: #fcd34d;
   --am-400: #fbbf24;
 
-  /* Glass & effects */
   --glass-bg-dark: rgba(18, 12, 34, 0.55);
   --glass-bg-light: rgba(255, 255, 255, 0.62);
   --glass-border-dark: rgba(167, 128, 248, 0.18);
   --glass-border-light: rgba(143, 92, 240, 0.22);
   --glass-blur: 18px;
+
+  --nav-h: 72px;
+  --max-width: 1100px;
 }
 
 [data-theme="dark"] {
@@ -82,6 +83,8 @@
 
 html {
   box-sizing: border-box;
+  min-height: 100dvh;
+  max-height: 100%;
 }
 
 *,
@@ -90,15 +93,42 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-  font-family: "DM Sans", sans-serif;
 }
 
 body {
   background: var(--bg);
-  color: var(--text-1);
-  line-height: 1.6;
   overflow-x: hidden;
   transition:
     background 0.35s ease,
     color 0.35s ease;
+  min-height: 100dvh;
+  max-height: 100%;
+}
+
+main {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  top: -200px;
+  left: -200px;
+  background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+  animation: drift1 18s ease-in-out infinite alternate;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  bottom: 10%;
+  right: -150px;
+  background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+  animation: drift2 22s ease-in-out infinite alternate;
 }

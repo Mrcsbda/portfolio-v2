@@ -17,5 +17,19 @@ export const AppHeader = () => {
     }
   }, []);
 
-  return <nav></nav>;
+  return (
+    <nav className="nav">
+      <section className="nav__inner">
+        <div className="nav__logo-container">
+          <img
+            className="nav__logo"
+            src="/favicon.svg"
+            alt="Logo"
+            width={40}
+            height={40}
+          />
+        </div>
+      </section>
+    </nav>
+  );
 };

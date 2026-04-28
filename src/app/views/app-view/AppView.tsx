@@ -4,7 +4,7 @@ import "./AppView.css";
 export const App = () => {
   return (
     <>
-      <AppHeader />;
+      <AppHeader />
     </>
   );
 };
