@@ -6,7 +6,84 @@
   font-family: "Sora", sans-serif;
 }
 
+.text-display {
+  font-size: 2.25rem;
+}
 
-@media screen and (max-width: 768px) {
-  
+.text-title-xl {
+  font-size: 1.625rem;
+}
+
+.text-title-l {
+  font-size: 1.125rem;
+}
+
+.text-title-s {
+  font-size: 1rem;
+}
+
+.text-body-xl {
+  font-size: 0.875rem;
+}
+
+.text-body-l {
+  font-size: 0.844rem;
+}
+
+.text-body-m {
+  font-size: 0.75rem;
+}
+
+.text-body-s {
+  font-size: 0.688rem;
+}
+
+.text-body-xs {
+  font-size: 0.625rem;
+}
+
+.color-text-1 {
+  color: var(--text-1);
+}
+
+.custom-color {
+  color: var(--paragraph);
+}
+
+@media screen and (min-width: 768px) {
+  .text-display {
+    font-size: clamp(2.625rem, 5.5vw, 4.25rem);
+  }
+
+  .text-title-xl {
+    font-size: clamp(1.75rem, 3.5vw, 2.625rem);
+  }
+
+  .text-title-l {
+    font-size: 1.25rem;
+  }
+
+  .text-title-s {
+    font-size: 1.125rem;
+  }
+
+  .text-body-xl {
+    font-size: 1rem;
+  }
+
+  .text-body-l {
+    font-size: clamp(0.844rem, 1.5vw, 0.875rem);
+  }
+
+  .text-body-m {
+    font-size: clamp(0.75rem, 1.5vw, 0.813rem);
+  }
+
+  .text-body-s {
+    font-size: clamp(0.688rem, 1.5vw, 0.75rem);
+  }
+
+  .text-body-xs {
+    font-size: clamp(0.625rem, 1.5vw, 0.688rem);
+  }
 }

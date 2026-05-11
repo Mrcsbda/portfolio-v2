@@ -7,7 +7,7 @@ import { appActions } from "./actions";
 import { appMutations } from "./app.mutations";
 import { initialAppState } from "./app.state";
 
-const appStoreState = create<IAppStore>()(
+export const appStoreState = create<IAppStore>()(
     devtools((set) => ({
         ...initialAppState,
         ...appMutations(set),
