@@ -50,6 +50,30 @@
   color: var(--paragraph);
 }
 
+.color-accent {
+  color: var(--accent);
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
 @media screen and (min-width: 768px) {
   .text-display {
     font-size: clamp(2.625rem, 5.5vw, 4.25rem);

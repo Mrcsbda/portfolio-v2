@@ -11,3 +11,11 @@ export const ENUM_LANGUAGE = {
 } as const
 
 export type ENUM_LANGUAGE = typeof ENUM_LANGUAGE[keyof typeof ENUM_LANGUAGE]
+
+export const SECTIONS = {
+    ABOUT: 'ABOUT',
+    PROJECTS: 'PROJECTS',
+    CONTACT: 'CONTACT'
+}
+
+export type SECTIONS = typeof SECTIONS[keyof typeof SECTIONS]
