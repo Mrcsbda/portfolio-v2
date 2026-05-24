@@ -1,0 +1,15 @@
+.btn-outlined {
+  padding: 0.875rem 2rem;
+  background-color: var(--btn-outlined);
+  color: var(--text-1);
+  border: 0.5px solid var(--border-active);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

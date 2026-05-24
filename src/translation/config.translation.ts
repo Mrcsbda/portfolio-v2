@@ -18,7 +18,7 @@ const resources = {
 
 i18next.use(initReactI18next).init({
     lng: 'es',
-    debug: true,
+    debug: false,
     resources,
 });
 

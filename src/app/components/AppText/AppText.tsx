@@ -8,7 +8,7 @@ interface IAppTextProps {
   color?: string;
   className?: string;
   fontWeight?: string;
-  children: React.ReactNode;
+  content: string;
   textAlign?: string;
   lineHeight?: string;
   fontSize?: string;
@@ -17,7 +17,16 @@ interface IAppTextProps {
 }
 
 export const AppText = (props: IAppTextProps) => {
-  const { tag: Tag, children, onClick } = props;
+  const {
+    tag: Tag,
+    font,
+    type,
+    color,
+    content,
+    className,
+    fontWeight,
+    onClick,
+  } = props;
 
   const classNameRef = useMemo(() => {
     const typeMap: Record<string, string> = {
@@ -33,15 +42,13 @@ export const AppText = (props: IAppTextProps) => {
       "body-xs": "text-body-xs",
     };
 
-    const fontType = props.font ? `${props.font}-font` : "custom-font";
-    const textType = typeMap[props.type];
-    const colorType = props.color ? `color-${props.color}` : "custom-color";
-    const fontWeight = props.fontWeight
-      ? `font-${props.fontWeight}`
-      : "custom-weight";
+    const fontType = font ? `${font}-font` : "custom-font";
+    const textType = typeMap[type];
+    const colorType = color ? `color-${color}` : "custom-color";
+    const fontWeightAux = fontWeight ? `font-${fontWeight}` : "custom-weight";
 
-    return `${fontType} ${textType} ${colorType} ${fontWeight} ${props.className ?? ""}`;
-  }, []);
+    return `${fontType} ${textType} ${colorType} ${fontWeightAux} ${className ?? ""}`;
+  }, [color]);
 
   const styles = useMemo(() => {
     return {
@@ -54,7 +61,7 @@ export const AppText = (props: IAppTextProps) => {
 
   return (
     <Tag className={classNameRef} style={styles} onClick={onClick}>
-      {children}
+      {content}
     </Tag>
   );
 };

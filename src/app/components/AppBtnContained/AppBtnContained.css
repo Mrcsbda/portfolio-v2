@@ -1,0 +1,13 @@
+.btn-contained {
+  padding: 0.875rem 2rem;
+  background-color: var(--pu-600);
+  color: var(--pu-50);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background 0.35s ease,
+    color 0.35s ease;
+  justify-content: center;
+  align-items: center;
+}

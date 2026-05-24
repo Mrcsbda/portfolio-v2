@@ -54,6 +54,10 @@
   color: var(--accent);
 }
 
+.color-pu-50 {
+  color: var(--pu-50);
+}
+
 .font-regular {
   font-weight: 400;
 }
