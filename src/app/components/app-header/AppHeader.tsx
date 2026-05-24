@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 //HOOKS
 import { useActiveSection, useValidateScreen } from "../../hooks";
 //TRANSLATION
+import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 //STORE
 import { useAppStore } from "../../store";
 // TYPES
 import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from "../../types/data.types";
 // COMPONENTS
-import { AppBtnContained } from "../AppBtnContained/AppBtnContained";
-import { AppText } from "../AppText/AppText";
+import { AppBtnContained } from "../app-btn-contained/AppBtnContained";
+import { AppBtnOutlined } from "../app-btn-outlined/AppBtnOutlined";
+import { AppText } from "../app-text/AppText";
 // CSS
-import i18next from "i18next";
-import { AppBtnOutlined } from "../AppBtnOutlined/AppBtnOutlined";
 import "./AppHeader.css";
 
 export const AppHeader = () => {

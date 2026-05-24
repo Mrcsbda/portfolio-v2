@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { HeroView } from "../../../modules/hero/views";
 import { AppHeader } from "../../components";
 import "./AppView.css";
 
@@ -10,6 +11,7 @@ export const App = () => {
   return (
     <>
       <AppHeader />
+      <HeroView />
     </>
   );
 };
