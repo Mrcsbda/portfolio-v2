@@ -1,8 +1,8 @@
 .btn-outlined {
-  padding: 0.875rem 2rem;
+  padding: 0.6rem 1.5rem;
   background-color: var(--btn-outlined);
   color: var(--text-1);
-  border: 0.5px solid var(--border-active);
+  border: 0.5px solid var(--border-btn-outlined);
   border-radius: 999px;
   cursor: pointer;
   transition:
@@ -12,4 +12,7 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }

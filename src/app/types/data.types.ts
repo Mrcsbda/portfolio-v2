@@ -13,6 +13,7 @@ export const ENUM_LANGUAGE = {
 export type ENUM_LANGUAGE = typeof ENUM_LANGUAGE[keyof typeof ENUM_LANGUAGE]
 
 export const SECTIONS = {
+    HOME: 'HOME',
     ABOUT: 'ABOUT',
     PROJECTS: 'PROJECTS',
     CONTACT: 'CONTACT'
