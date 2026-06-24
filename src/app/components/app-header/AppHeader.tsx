@@ -76,7 +76,7 @@ export const AppHeader = () => {
             <AppText
               tag="h2"
               type="fixed"
-              content={"MariDev"}
+              children={"MariDev"}
               font="sora"
               fontSize="1.125rem"
               color="text-1"
@@ -94,7 +94,7 @@ export const AppHeader = () => {
                   <AppText
                     tag="h3"
                     type="body-xl"
-                    content={option.label}
+                    children={option.label}
                     color={activeSection === option.id ? "accent" : "text-1"}
                     fontWeight="regular"
                   />
@@ -121,7 +121,7 @@ export const AppHeader = () => {
                   <AppText
                     tag="p"
                     type="fixed"
-                    content={lang.get() === ENUM_LANGUAGE.EN ? "ES" : "EN"}
+                    children={lang.get() === ENUM_LANGUAGE.EN ? "ES" : "EN"}
                     color="text-1"
                     fontWeight="regular"
                     fontSize="16px"
@@ -167,7 +167,7 @@ export const AppHeader = () => {
                   <AppText
                     tag="p"
                     type="fixed"
-                    content={t("DOWNLOAD_CV")}
+                    children={t("DOWNLOAD_CV")}
                     color="pu-50"
                     fontWeight="regular"
                     fontSize="16px"
@@ -195,7 +195,7 @@ export const AppHeader = () => {
               <AppText
                 tag="h3"
                 type="fixed"
-                content={option.label}
+                children={option.label}
                 color={activeSection === option.id ? "accent" : "text-1"}
                 fontWeight="regular"
                 fontSize="16px"
@@ -226,7 +226,7 @@ export const AppHeader = () => {
               <AppText
                 tag="p"
                 type="fixed"
-                content={lang.get() === ENUM_LANGUAGE.EN ? "ES" : "EN"}
+                children={lang.get() === ENUM_LANGUAGE.EN ? "ES" : "EN"}
                 color="pu-50"
                 fontWeight="regular"
                 fontSize="16px"
@@ -242,7 +242,7 @@ export const AppHeader = () => {
               <AppText
                 tag="p"
                 type="fixed"
-                content={t("DOWNLOAD_CV")}
+                children={t("DOWNLOAD_CV")}
                 color="text-1"
                 fontWeight="regular"
                 fontSize="16px"

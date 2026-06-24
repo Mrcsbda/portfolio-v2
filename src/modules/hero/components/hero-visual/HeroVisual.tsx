@@ -1,5 +1,5 @@
 import "./HeroVisual.css";
 
 export const HeroVisual = () => {
-  return <p>Hero Visual</p>;
+  return <div className="hero-visual"></div>;
 };

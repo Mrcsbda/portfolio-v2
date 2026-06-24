@@ -8,7 +8,7 @@ interface IAppTextProps {
   color?: string;
   className?: string;
   fontWeight?: string;
-  content: string;
+  children: React.ReactNode | string;
   textAlign?: string;
   lineHeight?: string;
   fontSize?: string;
@@ -22,7 +22,7 @@ export const AppText = (props: IAppTextProps) => {
     font,
     type,
     color,
-    content,
+    children,
     className,
     fontWeight,
     onClick,
@@ -61,7 +61,7 @@ export const AppText = (props: IAppTextProps) => {
 
   return (
     <Tag className={classNameRef} style={styles} onClick={onClick}>
-      {content}
+      {children}
     </Tag>
   );
 };

@@ -1,0 +1,38 @@
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .hero-content__badge {
+    padding: 6px 14px;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    box-shadow:
+      0 1px 1px 0 rgba(0, 0, 0, 0.08),
+      inset 0 0 1px rgba(157, 90, 229, 0);
+    border-radius: 999px;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+
+    .hero-content__badge-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--dot);
+      border-radius: 50%;
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

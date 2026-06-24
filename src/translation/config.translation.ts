@@ -3,16 +3,20 @@ import { initReactI18next } from "react-i18next";
 
 //imports en
 import header_en from './en/en.header.json';
+import hero_en from './en/en.hero.json';
 
 // imports es
 import header_es from './es/es.header.json';
+import hero_es from './es/es.hero.json';
 
 const resources = {
     en: {
-        header: header_en
+        header: header_en,
+        hero: hero_en
     },
     es: {
-        header: header_es
+        header: header_es,
+        hero: hero_es
     },
 };
 
