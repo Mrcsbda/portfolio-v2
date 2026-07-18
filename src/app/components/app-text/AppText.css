@@ -1,117 +1,123 @@
-.custom-font {
-  font-family: "DM Sans", sans-serif;
-}
-
-.sora-font {
-  font-family: "Sora", sans-serif;
-}
-
-.text-display {
-  font-size: 2.25rem;
-}
-
-.text-title-xl {
-  font-size: 1.625rem;
-}
-
-.text-title-l {
-  font-size: 1.125rem;
-}
-
-.text-title-s {
-  font-size: 1rem;
-}
-
-.text-body-xl {
+.nav-item {
+  text-decoration: none;
+  color: var(--ink-2);
   font-size: 0.875rem;
-}
-
-.text-body-l {
-  font-size: 0.844rem;
-}
-
-.text-body-m {
-  font-size: 0.75rem;
-}
-
-.text-body-s {
-  font-size: 0.688rem;
-}
-
-.text-body-xs {
-  font-size: 0.625rem;
-}
-
-.color-text-1 {
-  color: var(--text-1);
-}
-
-.custom-color {
-  color: var(--paragraph);
-}
-
-.color-accent {
-  color: var(--accent);
-}
-
-.color-pu-50 {
-  color: var(--pu-50);
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semibold {
   font-weight: 600;
 }
 
-.font-bold {
+.btn-text {
+  font-family: var(--font);
   font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.font-extrabold {
+.description {
+  color: var(--ink-2);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* SECTIONS */
+
+.section-title {
+  font-size: clamp(1.75rem, 4.6vw, 2.75rem);
   font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
 }
 
-@media screen and (min-width: 768px) {
-  .text-display {
-    font-size: clamp(2.625rem, 5.5vw, 4.25rem);
-  }
+.section-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
 
-  .text-title-xl {
-    font-size: clamp(1.75rem, 3.5vw, 2.625rem);
-  }
+.section-description {
+  color: var(--ink-2);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+}
 
-  .text-title-l {
-    font-size: 1.25rem;
-  }
+/* HERO */
 
-  .text-title-s {
-    font-size: 1.125rem;
-  }
+.hero-title {
+  font-size: clamp(2.25rem, 6vw, 3.875rem);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
 
-  .text-body-xl {
-    font-size: 1rem;
-  }
+.hero-title-soft {
+  font-size: clamp(2.25rem, 6vw, 3.875rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  color: var(--ink-2);
+}
 
-  .text-body-l {
-    font-size: clamp(0.844rem, 1.5vw, 0.875rem);
-  }
+/* CONTACT */
 
-  .text-body-m {
-    font-size: clamp(0.75rem, 1.5vw, 0.813rem);
-  }
+.contact-title {
+  font-size: clamp(1.875rem, 5.4vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
 
-  .text-body-s {
-    font-size: clamp(0.688rem, 1.5vw, 0.75rem);
-  }
+/* PROJECTS  */
 
-  .text-body-xs {
-    font-size: clamp(0.625rem, 1.5vw, 0.688rem);
-  }
+.project-title {
+  font-size: clamp(1.375rem, 3vw, 1.875rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.project-number {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+
+.project-chip {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--ink-2);
+}
+
+/* ROUTE */
+
+.rol-title {
+  font-size: clamp(1.25rem, 2.6vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.rol-timeline {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent-deep);
+}
+
+.rol-company {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+/* STACK */
+
+.tech-text {
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+  font-weight: 700;
+  line-height: 1.85;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }

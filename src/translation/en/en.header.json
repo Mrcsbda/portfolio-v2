@@ -1,8 +1,8 @@
 {
     "NAVBAR": {
-        "ABOUT": "About",
+        "ROUTE": "Route",
+        "STACK": "Stack",
         "PROJECTS": "Projects",
         "CONTACT": "Contact"
-    },
-    "DOWNLOAD_CV": "Download CV"
+    }
 }

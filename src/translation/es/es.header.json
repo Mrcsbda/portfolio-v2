@@ -1,8 +1,8 @@
 {
     "NAVBAR": {
-        "ABOUT": "Acerca de",
+        "ROUTE": "Recorrido",
+        "STACK": "Tecnologías",
         "PROJECTS": "Proyectos",
         "CONTACT": "Contacto"
-    },
-    "DOWNLOAD_CV": "Descargar CV"
+    }
 }

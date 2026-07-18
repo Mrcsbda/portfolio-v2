@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { HeroView } from "../../../modules/hero/views";
 import { AppHeader } from "../../components";
+import { AppBackground } from "../../components/app-background/AppBackground";
 import "./AppView.css";
 
 export const App = () => {
@@ -10,8 +10,8 @@ export const App = () => {
 
   return (
     <>
+      <AppBackground />
       <AppHeader />
-      <HeroView />
     </>
   );
 };

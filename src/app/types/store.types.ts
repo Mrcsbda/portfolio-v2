@@ -8,6 +8,7 @@ export interface IAppState {
 export interface IAppActions {
   changeTheme: (theme: ENUM_THEME) => void;
   changeLanguage: (language: ENUM_LANGUAGE) => void;
+  changeFavicon: (theme: string) => void;
 }
 
 export interface IAppMutations {

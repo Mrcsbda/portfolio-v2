@@ -14,7 +14,7 @@ export const appStoreState = create<IAppStore>()(
     }))
 );
 
-export const useAppStore = (): IStoreAdapter<IAppState, typeof appStoreState> &
+export const appStore = (): IStoreAdapter<IAppState, typeof appStoreState> &
     IAppActions &
     IAppMutations => {
     return {

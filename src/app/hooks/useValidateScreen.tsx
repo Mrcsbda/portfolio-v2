@@ -6,8 +6,8 @@ export const useValidateScreen = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+      setIsMobile(window.innerWidth < 860);
+      setIsTablet(window.innerWidth >= 860 && window.innerWidth < 1024);
     };
 
     handleResize();

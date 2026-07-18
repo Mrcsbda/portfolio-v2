@@ -1,0 +1,51 @@
+.app-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  span {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: var(--blob-op);
+    transition: background 0.5s var(--ease);
+  }
+
+  .a {
+    width: 520px;
+    height: 520px;
+    background: var(--blob-a);
+    top: -160px;
+    right: -80px;
+    animation: drift 26s var(--ease) infinite alternate;
+  }
+
+  .b {
+    width: 460px;
+    height: 460px;
+    background: var(--blob-b);
+    bottom: -180px;
+    left: -100px;
+    animation: drift 32s var(--ease) infinite alternate-reverse;
+  }
+
+  .c {
+    width: 400px;
+    height: 400px;
+    background: var(--blob-c);
+    top: 48%;
+    left: 40%;
+    animation: drift 38s var(--ease) infinite alternate;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(44px, 32px) scale(1.08);
+  }
+}
