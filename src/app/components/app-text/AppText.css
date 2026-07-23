@@ -1,12 +1,21 @@
 .nav-item {
   text-decoration: none;
   color: var(--ink-2);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  &:hover {
+    color: var(--ink);
+  }
+}
+
+.nav-item-active {
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .btn-text {
-  font-family: var(--font);
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
