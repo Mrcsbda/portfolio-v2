@@ -2,7 +2,7 @@
 
 :root {
   --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --maxw: 1140px;
+  --maxw: 1090px;
   --r: 22px;
   --r-lg: 30px;
   --nav-h: 60px;
@@ -88,4 +88,25 @@ body {
   transition:
     background 0.45s var(--ease),
     color 0.45s var(--ease);
+}
+
+.glass {
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-brd);
+  backdrop-filter: blur(15px) saturate(1.4);
+  -webkit-backdrop-filter: blur(15px) saturate(1.5);
+  box-shadow:
+    var(--shadow-sm),
+    inset 0 1px 0 var(--hi);
+}
+
+.app-content-container {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  height: 100%;
+  overflow-x: hidden;
+  padding: 120px 24px 70px;
+  max-width: 1140px;
+  margin: 0 auto;
 }

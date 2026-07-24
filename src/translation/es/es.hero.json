@@ -1,7 +1,8 @@
 {
     "BADGE": "Disponible para trabajar",
-    "TITLE": "Transformando ideas técnicas en <bold>experiencias</bold> digitales.",
-    "DESCRIPTION": "Soy Mariana, desarrolladora frontend apasionada por crear experiencias digitales atractivas y funcionales. Disfruto transformar ideas técnicas en soluciones modernas centradas en el usuario, mientras continúo creciendo en mi camino hacia el desarrollo full stack.",
+    "TITLE": "Hola, soy Mariana.",
+    "SUBTITLE": "Vivo entre lo que el usuario usa y lo que lo hace posible.",
+    "DESCRIPTION": "Me importan los detalles que casi nadie ve pero todos sienten. Los cuido en cada interfaz que construyo, en web y mobile, con Vue y React Native y ahora aprendo backend para acompañar la idea completa, desde el primer clic hasta lo que pasa por debajo.",
     "VIEW_PROJECTS": "Ver proyectos",
     "CONTACT_ME": "Contáctame"
 }

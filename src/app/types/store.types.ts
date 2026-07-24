@@ -1,4 +1,4 @@
-import { ENUM_LANGUAGE, ENUM_THEME } from './data.types';
+import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from './data.types';
 
 export interface IAppState {
   theme: ENUM_THEME
@@ -15,4 +15,8 @@ export interface IAppMutations {
   setState: <K extends keyof IAppState>(field: K, value: IAppState[K]) => void;
 }
 
-export type IAppStore = IAppState & IAppActions & IAppMutations;
+export interface IAppHelpers {
+  scrollToSection: (sectionId: SECTIONS) => void;
+}
+
+export type IAppStore = IAppState & IAppMutations

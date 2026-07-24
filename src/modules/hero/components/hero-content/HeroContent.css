@@ -1,0 +1,35 @@
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  .hero-content__chip {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 100px;
+    background: var(--accent-soft);
+    width: fit-content;
+  }
+
+  .hero-content__chip-pill {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: ping 2.6s var(--ease) infinite;
+  }
+}
+
+@keyframes ping {
+  0% {
+    box-shadow: 0 0 0 0 var(--accent-soft);
+  }
+  70% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

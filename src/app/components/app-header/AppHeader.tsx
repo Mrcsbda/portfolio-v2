@@ -10,13 +10,15 @@ import { appStore } from "../../store";
 // TYPES
 import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from "../../types/data.types";
 // COMPONENTS
-// CSS
-import { IconMenu3, IconMoon, IconSunLow } from "@tabler/icons-react";
 import { AppText } from "../app-text/AppText";
+// CSS
 import "./AppHeader.css";
+// ICONS
+import { IconMenu3, IconMoon, IconSunLow } from "@tabler/icons-react";
 
 export const AppHeader = () => {
-  const { theme, lang, changeTheme, changeLanguage } = appStore();
+  const { theme, lang, scrollToSection, changeTheme, changeLanguage } =
+    appStore();
   const { t } = useTranslation("header");
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   const activeSection = useActiveSection(Object.values(SECTIONS));
@@ -50,15 +52,11 @@ export const AppHeader = () => {
     },
   ];
 
-  const onScrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <nav className="nav">
-      <section className="nav__content" id="header">
+      <section className="nav__content glass" id="header">
         <div
-          onClick={() => onScrollToSection(SECTIONS.TOP)}
+          onClick={() => scrollToSection(SECTIONS.HERO)}
           className="nav__logo-container"
         >
           <div className="nav__logo">
@@ -72,7 +70,7 @@ export const AppHeader = () => {
               <button
                 key={index}
                 onClick={() => {
-                  onScrollToSection(option.id);
+                  scrollToSection(option.id);
                   setShowMobileMenu(false);
                 }}
                 className="nav__menu-mobile-item"
@@ -144,30 +142,30 @@ export const AppHeader = () => {
           )}
         </div>
         {/* MENU MOBILE */}
-        <div
-          className="nav__menu-mobile-container"
-          data-show={showMobileMenu ? "true" : "false"}
-        >
-          {menuOptions.map((option, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                onScrollToSection(option.id);
-                setShowMobileMenu(false);
-              }}
-              className="nav__menu-mobile-item"
-            >
-              <AppText
-                tag="span"
-                type={
-                  activeSection === option.id ? "nav-item-active" : "nav-item"
-                }
-                children={option.label}
-              />
-            </button>
-          ))}
-        </div>
       </section>
+      <div
+        className="nav__menu-mobile-container glass"
+        data-show={showMobileMenu ? "true" : "false"}
+      >
+        {menuOptions.map((option, index) => (
+          <button
+            key={index}
+            onClick={() => {
+              scrollToSection(option.id);
+              setShowMobileMenu(false);
+            }}
+            className="nav__menu-mobile-item"
+          >
+            <AppText
+              tag="span"
+              type={
+                activeSection === option.id ? "nav-item-active" : "nav-item"
+              }
+              children={option.label}
+            />
+          </button>
+        ))}
+      </div>
     </nav>
   );
 };

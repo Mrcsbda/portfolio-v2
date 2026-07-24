@@ -2,10 +2,11 @@ import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { buildStoreAdapter } from "../common/helpers";
 import type { IStoreAdapter } from "../common/types";
-import type { IAppActions, IAppMutations, IAppState, IAppStore } from "../types/store.types";
+import type { IAppActions, IAppHelpers, IAppMutations, IAppState, IAppStore } from "../types/store.types";
 import { appActions } from "./actions";
 import { appMutations } from "./app.mutations";
 import { initialAppState } from "./app.state";
+import { appHelpers } from "./helpers";
 
 export const appStoreState = create<IAppStore>()(
     devtools((set) => ({
@@ -16,10 +17,12 @@ export const appStoreState = create<IAppStore>()(
 
 export const appStore = (): IStoreAdapter<IAppState, typeof appStoreState> &
     IAppActions &
-    IAppMutations => {
+    IAppMutations &
+    IAppHelpers => {
     return {
         ...buildStoreAdapter<IAppState, typeof appStoreState>(appStoreState),
         ...appActions,
+        ...appHelpers,
         ...appMutations(appStoreState.setState),
     };
 }
