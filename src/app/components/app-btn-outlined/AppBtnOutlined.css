@@ -1,0 +1,31 @@
+.btn-outlined {
+  background: var(--glass-strong);
+
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 14px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--glass-brd);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition:
+    transform 0.2s var(--ease),
+    box-shadow 0.2s var(--ease),
+    background 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.btn-outlined--icon-only {
+  color: var(--ink-2);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.btn-outlined--text-icon {
+  color: var(--ink);
+}
+
+.btn-outlined:hover {
+  transform: translateY(-2px);
+}

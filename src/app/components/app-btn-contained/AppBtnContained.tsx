@@ -1,17 +1,20 @@
 // CSS
+import { AppText } from "../app-text/AppText";
 import "./AppBtnContained.css";
 
 interface IAppBtnContainedProps {
-  children: React.ReactNode;
+  text: string;
+  icon?: React.ReactNode;
   onClick: () => void;
 }
 
 export const AppBtnContained = (props: IAppBtnContainedProps) => {
-  const { children, onClick } = props;
+  const { text, icon, onClick } = props;
 
   return (
     <button className="btn-contained" onClick={onClick}>
-      {children}
+      <AppText tag="span" type={"btn-text"} children={text} />
+      {icon && icon}
     </button>
   );
 };

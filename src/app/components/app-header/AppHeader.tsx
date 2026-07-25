@@ -22,7 +22,7 @@ export const AppHeader = () => {
   const { t } = useTranslation("header");
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   const activeSection = useActiveSection(Object.values(SECTIONS));
-  const { isMobile, isTablet } = useValidateScreen();
+  const { isMobile } = useValidateScreen();
 
   useEffect(() => {
     const langAux = localStorage.getItem("lang");
@@ -30,8 +30,8 @@ export const AppHeader = () => {
   }, []);
 
   useEffect(() => {
-    if ((!isMobile || !isTablet) && showMobileMenu) setShowMobileMenu(false);
-  }, [isMobile, isTablet]);
+    if (!isMobile && showMobileMenu) setShowMobileMenu(false);
+  }, [isMobile]);
 
   const menuOptions = [
     {

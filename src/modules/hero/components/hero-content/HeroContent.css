@@ -20,6 +20,18 @@
     background: var(--accent);
     animation: ping 2.6s var(--ease) infinite;
   }
+  .hero-content__buttons-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .hero-content__networks-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
 }
 
 @keyframes ping {

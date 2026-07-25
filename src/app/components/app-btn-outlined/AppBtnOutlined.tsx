@@ -1,17 +1,23 @@
 // CSS
+import { AppText } from "../app-text/AppText";
 import "./AppBtnOutlined.css";
 
 interface IAppBtnOutlinedProps {
-  children: React.ReactNode;
+  text?: string;
+  icon?: React.ReactNode;
   onClick: () => void;
 }
 
 export const AppBtnOutlined = (props: IAppBtnOutlinedProps) => {
-  const { children, onClick } = props;
+  const { text, icon, onClick } = props;
 
   return (
-    <button className="btn-outlined" onClick={onClick}>
-      {children}
+    <button
+      className={`btn-outlined ${!text ? "btn-outlined--icon-only" : "btn-outlined--text-icon"}`}
+      onClick={onClick}
+    >
+      {icon && icon}
+      {text && <AppText tag="span" type={"btn-text"} children={text} />}
     </button>
   );
 };

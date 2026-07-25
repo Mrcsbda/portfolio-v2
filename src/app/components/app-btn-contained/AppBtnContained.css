@@ -1,0 +1,20 @@
+.btn-contained {
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  box-shadow: var(--shadow-sm);
+  padding: 14px 24px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition:
+    transform 0.2s var(--ease),
+    box-shadow 0.2s var(--ease),
+    background 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.btn-contained:hover {
+  transform: translateY(-2px);
+}

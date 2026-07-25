@@ -2,4 +2,11 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  padding-top: 130px;
+}
+
+@media screen and (min-width: 1050px) {
+  .hero-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }

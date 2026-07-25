@@ -12,7 +12,7 @@
 [data-theme="dark"] {
   --bg: #0f1115;
   --ink: #f2f3f5;
-  --ink-2: #a7abb4;
+  --ink-2: #dcdee2;
   --ink-3: #8b909a;
   --accent: #93a9c8;
   --accent-deep: #aec0da;
@@ -36,7 +36,7 @@
 [data-theme="light"] {
   --bg: #e9ebef;
   --ink: #1c1c1e;
-  --ink-2: #5c616b;
+  --ink-2: #4e535c;
   --ink-3: #656a73;
   --accent: #6f88ab;
   --accent-deep: #46597a;
@@ -93,8 +93,8 @@ body {
 .glass {
   background: var(--glass-strong);
   border: 1px solid var(--glass-brd);
-  backdrop-filter: blur(15px) saturate(1.4);
-  -webkit-backdrop-filter: blur(15px) saturate(1.5);
+  backdrop-filter: blur(10px) saturate(1.5);
+  -webkit-backdrop-filter: blur(10px) saturate(1.5);
   box-shadow:
     var(--shadow-sm),
     inset 0 1px 0 var(--hi);
@@ -106,7 +106,13 @@ body {
   min-height: 100dvh;
   height: 100%;
   overflow-x: hidden;
-  padding: 120px 24px 70px;
-  max-width: 1140px;
+  padding: 0px 24px 70px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1050px) {
+  .app-content-container {
+    padding: 0px 40px 70px;
+  }
 }
