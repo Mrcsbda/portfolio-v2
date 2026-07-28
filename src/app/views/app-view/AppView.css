@@ -2,7 +2,7 @@
 
 :root {
   --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --maxw: 1090px;
+  --maxw: 1150px;
   --r: 22px;
   --r-lg: 30px;
   --nav-h: 60px;
@@ -30,7 +30,7 @@
   --blob-c: #1e332e;
   --blob-op: 0.6;
   --shadow-sm: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.45), 0 40px 80px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 0px 10px rgba(0, 0, 0, 0.45), 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="light"] {
@@ -56,7 +56,7 @@
   --shadow-sm:
     0 1px 2px rgba(30, 35, 60, 0.06), 0 1px 1px rgba(30, 35, 60, 0.1);
   --shadow-lg:
-    0 10px 30px rgba(30, 35, 60, 0.1), 0 40px 80px rgba(30, 35, 60, 0.12);
+    0 0px 10px rgba(30, 35, 60, 0.1), 0 10px 40px rgba(30, 35, 60, 0.12);
 }
 
 html {
@@ -93,8 +93,8 @@ body {
 .glass {
   background: var(--glass-strong);
   border: 1px solid var(--glass-brd);
-  backdrop-filter: blur(10px) saturate(1.5);
-  -webkit-backdrop-filter: blur(10px) saturate(1.5);
+  backdrop-filter: blur(20px) saturate(1.8) brightness(1.03);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8) brightness(1.03);
   box-shadow:
     var(--shadow-sm),
     inset 0 1px 0 var(--hi);
@@ -107,7 +107,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   padding: 0px 24px 70px;
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
