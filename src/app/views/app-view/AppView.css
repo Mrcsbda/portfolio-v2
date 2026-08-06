@@ -2,7 +2,7 @@
 
 :root {
   --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --maxw: 1150px;
+  --maxw: 1000px;
   --r: 22px;
   --r-lg: 30px;
   --nav-h: 60px;
@@ -107,7 +107,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   padding: 0px 24px 70px;
-  max-width: 1350px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 

@@ -1,5 +1,5 @@
 // CSS
-import { AppText } from "../app-text/AppText";
+import { AppText } from "@app/components/app-text/AppText";
 import "./AppBtnContained.css";
 
 interface IAppBtnContainedProps {

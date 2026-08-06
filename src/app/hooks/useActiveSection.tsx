@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { SECTIONS } from "../types/data.types";
+import type { SECTIONS } from "@app/types/data.types";
 
 export const useActiveSection = (sectionIds: SECTIONS[]) => {
   const [activeSection, setActiveSection] = useState(sectionIds[0]);

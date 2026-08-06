@@ -1,7 +1,10 @@
+//REACT
 import { useEffect } from "react";
-import { HeroSection } from "../../../modules/hero/main/HeroSection";
-import { AppHeader } from "../../components";
-import { AppBackground } from "../../components/app-background/AppBackground";
+// COMPONENTS
+import { AppHeader } from "@app/components";
+import { AppBackground } from "@app/components/app-background/AppBackground";
+import { HeroSection } from "@hero/main/HeroSection";
+// CSS
 import "./AppView.css";
 
 export const App = () => {

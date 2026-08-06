@@ -8,15 +8,11 @@ import {
 // TRANSLATION
 import { useTranslation } from "react-i18next";
 //COMPONENTS
-import {
-  AppBtnContained,
-  AppBtnOutlined,
-  AppText,
-} from "../../../../app/components";
+import { AppBtnContained, AppBtnOutlined, AppText } from "@app/components";
 // STORE
-import { appStore } from "../../../../app/store";
+import { appStore } from "@app/store";
 // TYPES
-import { SECTIONS } from "../../../../app/types/data.types";
+import { SECTIONS } from "@app/types/data.types";
 //CSS
 import "./HeroContent.css";
 

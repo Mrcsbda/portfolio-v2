@@ -1,5 +1,5 @@
 // CSS
-import { AppText } from "../app-text/AppText";
+import { AppText } from "@app/components/app-text/AppText";
 import "./AppBtnOutlined.css";
 
 interface IAppBtnOutlinedProps {

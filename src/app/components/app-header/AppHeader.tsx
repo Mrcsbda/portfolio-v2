@@ -1,16 +1,16 @@
 // REACT
 import { useEffect, useState } from "react";
 //HOOKS
-import { useActiveSection, useValidateScreen } from "../../hooks";
+import { useActiveSection, useValidateScreen } from "@app/hooks";
 //TRANSLATION
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 //STORE
-import { appStore } from "../../store";
+import { appStore } from "@app/store";
 // TYPES
-import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from "../../types/data.types";
+import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from "@app/types/data.types";
 // COMPONENTS
-import { AppText } from "../app-text/AppText";
+import { AppText } from "@app/components";
 // CSS
 import "./AppHeader.css";
 // ICONS
@@ -36,7 +36,7 @@ export const AppHeader = () => {
   const menuOptions = [
     {
       label: t("NAVBAR.ROUTE"),
-      id: SECTIONS.ROUTE,
+      id: SECTIONS.JOURNEY,
     },
     {
       label: t("NAVBAR.STACK"),

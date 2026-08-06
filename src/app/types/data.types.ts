@@ -14,7 +14,7 @@ export type ENUM_LANGUAGE = typeof ENUM_LANGUAGE[keyof typeof ENUM_LANGUAGE]
 
 export const SECTIONS = {
     HERO: 'HERO',
-    ROUTE: 'ROUTE',
+    JOURNEY: 'JOURNEY',
     STACK: 'STACK',
     PROJECTS: 'PROJECTS',
     CONTACT: 'CONTACT'

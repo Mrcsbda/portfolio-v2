@@ -1,5 +1,5 @@
-import { ENUM_LANGUAGE, ENUM_THEME } from "../types/data.types";
-import type { IAppState } from "../types/store.types";
+import { ENUM_LANGUAGE, ENUM_THEME } from "@app/types/data.types";
+import type { IAppState } from "@app/types/store.types";
 
 export const initialAppState: IAppState = {
     theme: (localStorage.getItem('theme') as ENUM_THEME) ?? ENUM_THEME.LIGHT,
