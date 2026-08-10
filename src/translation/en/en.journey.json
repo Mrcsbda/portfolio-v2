@@ -1,0 +1,28 @@
+{
+    "JOURNEY": "Journey",
+    "JOURNEY_TITLE": "How I Got Here",
+    "JOURNEY_DESCRIPTION": "My journey began with a single step, but every decision I made led me to where I am today. Through challenges and lessons learned, I have grown and evolved. Here’s a glimpse into my journey, filled with experiences that have shaped who I am.",
+    "ACTUAL": "Current",
+    "JOURNEY_STEPS": [
+        {
+            "STEP_TITLE": "Frontend Developer",
+            "COMPANY": "Ikualo · Spain",
+            "STEP_DESCRIPTION": "I currently work in the development of web and mobile products, participating in projects from their initial architecture to their production launch. I primarily work with <bold>Vue.js, React Native and TypeScript</bold>, building reusable components and integrating applications with REST APIs. I have participated in the development of an administrative backoffice and a mobile application, implementing features such as authentication, onboarding, transfers and card management, while contributing to the improvement of performance, user experience and code quality."
+        },
+        {
+            "STEP_TITLE": "Frontend Developer · Freelance",
+            "COMPANY": "Independent Projects",
+            "STEP_DESCRIPTION": "Parallel to my professional experience, I have developed custom web applications and interfaces for different needs and projects. I have been responsible for transforming requirements into functional solutions, working with <bold>Vue.js, TypeScript, JavaScript and Firebase</bold>. This stage has allowed me to strengthen my autonomy, communication with clients and my ability to make technical decisions throughout the development cycle."
+        },
+        {
+            "STEP_TITLE": "Technology in Multimedia and Web Development",
+            "COMPANY": "SENA · Colombia",
+            "STEP_DESCRIPTION": "During my training at SENA, I strengthened my knowledge of web development and gained a more comprehensive understanding of the process of creating digital products. This experience allowed me to put theory into practice, develop projects, and solidify the technical foundations that I now apply in my work as a front-end developer."
+        },
+        {
+            "STEP_TITLE": "Bootcamp Frontend Developer",
+            "COMPANY": "Makaia",
+            "STEP_DESCRIPTION": "My hands-on training in front-end development began with Makaia’s Front-End Coding and Programming Bootcamp, where I solidified my foundation in programming and web development. It was a pivotal step in turning my interest in technology into concrete skills and starting to build my first projects."
+        }
+    ]
+}

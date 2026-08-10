@@ -1,0 +1,28 @@
+{
+    "JOURNEY": "Recorrido",
+    "JOURNEY_TITLE": "Cómo llegué hasta aquí",
+    "JOURNEY_DESCRIPTION": "Mi viaje comenzó con un simple paso, pero cada decisión me llevó a donde estoy hoy. A través de desafíos y aprendizajes, he crecido y evolucionado. Este es un vistazo a mi camino, lleno de experiencias que han moldeado quién soy.",
+    "ACTUAL": "Actualidad",
+    "JOURNEY_STEPS": [
+        {
+            "STEP_TITLE": "Frontend Developer",
+            "COMPANY": "Ikualo · España",
+            "STEP_DESCRIPTION": "Actualmente trabajo en el desarrollo de productos web y móviles, participando en proyectos desde su arquitectura inicial hasta su puesta en producción. Trabajo principalmente con <bold>Vue.js, React Native y TypeScript</bold>, construyendo componentes reutilizables e integrando aplicaciones con APIs REST. He participado en el desarrollo de un backoffice administrativo y una aplicación móvil, implementando funcionalidades como autenticación, onboarding, transferencias y gestión de tarjetas, mientras contribuyo a la mejora del rendimiento, la experiencia de usuario y la calidad del código."
+        },
+        {
+            "STEP_TITLE": "Frontend Developer · Freelance",
+            "COMPANY": "Proyectos independientes",
+            "STEP_DESCRIPTION": "Paralelamente a mi experiencia profesional, he desarrollado aplicaciones e interfaces web a medida para diferentes necesidades y proyectos. Me he encargado de transformar requerimientos en soluciones funcionales, trabajando con <bold>Vue.js, TypeScript, JavaScript y Firebase</bold>. Esta etapa me ha permitido fortalecer mi autonomía, la comunicación con clientes y mi capacidad para tomar decisiones técnicas durante todo el ciclo de desarrollo."
+        },
+        {
+            "STEP_TITLE": "Tecnología en Desarrollo Multimedia y Web",
+            "COMPANY": "SENA · Colombia",
+            "STEP_DESCRIPTION": "Durante mi formación en el SENA fortalecí mis conocimientos en desarrollo web y adquirí una visión más completa del proceso de creación de productos digitales. Esta etapa me permitió llevar la teoría a la práctica, desarrollar proyectos y consolidar las bases técnicas que hoy aplico en mi trabajo como Frontend Developer."
+        },
+        {
+            "STEP_TITLE": "Bootcamp Frontend Developer",
+            "COMPANY": "Makaia",
+            "STEP_DESCRIPTION": "Mi formación práctica en desarrollo frontend comenzó con el Bootcamp de Código y Programación Front End de Makaia, donde consolidé mis bases en programación y desarrollo web. Fue una etapa clave para transformar mi interés por la tecnología en habilidades concretas y comenzar a construir mis primeros proyectos."
+        }
+    ]
+}

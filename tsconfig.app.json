@@ -25,6 +25,9 @@
       "@hero/*": [
         "./src/modules/hero/*"
       ],
+      "@journey/*": [
+        "./src/modules/journey/*"
+      ],
       "@assets/*": [
         "./src/assets/*"
       ],

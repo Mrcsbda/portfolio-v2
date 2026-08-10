@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { AppHeader } from "@app/components";
 import { AppBackground } from "@app/components/app-background/AppBackground";
 import { HeroSection } from "@hero/main/HeroSection";
+import { JourneySection } from "@journey/main/JourneySection";
 // CSS
 import "./AppView.css";
 
@@ -18,6 +19,7 @@ export const App = () => {
       <AppHeader />
       <section className="app-content-container">
         <HeroSection />
+        <JourneySection />
       </section>
     </>
   );
