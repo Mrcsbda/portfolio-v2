@@ -9,10 +9,11 @@ interface IAppTextProps {
   textAlign?: string;
   fontSize?: string;
   onClick?: () => void;
+  id?: string;
 }
 
 export const AppText = (props: IAppTextProps) => {
-  const { tag: Tag, type, children, className, onClick } = props;
+  const { tag: Tag, id, type, children, className, onClick } = props;
 
   const classNameRef = useMemo(() => {
     return `${type} ${className ?? ""}`;
@@ -26,7 +27,7 @@ export const AppText = (props: IAppTextProps) => {
   }, []);
 
   return (
-    <Tag className={classNameRef} style={styles} onClick={onClick}>
+    <Tag id={id} className={classNameRef} style={styles} onClick={onClick}>
       {children}
     </Tag>
   );

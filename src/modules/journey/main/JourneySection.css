@@ -24,11 +24,13 @@
 
   .journey-section__description {
     margin-bottom: 34px;
-    max-width: 620px;
+    max-width: 680px;
   }
 
   .journey-section__timeline {
     display: flex;
+    gap: 32px;
+    border-left: 2px solid var(--hairline);
     flex-direction: column;
   }
 }
