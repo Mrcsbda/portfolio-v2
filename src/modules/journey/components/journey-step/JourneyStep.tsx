@@ -60,6 +60,7 @@ export const JourneyStep = ({ data }: IJourneyStepProps) => {
           }
         />
       </div>
+      <div className="journey-step__animation"></div>
     </div>
   );
 };

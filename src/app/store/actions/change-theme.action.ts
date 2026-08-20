@@ -1,5 +1,5 @@
 import { appStore } from "@app/store";
-import type { ENUM_THEME } from "@app/types/data.types";
+import type { ENUM_THEME } from "@app/types";
 
 export const changeTheme = (value: ENUM_THEME) => {
     const { theme, changeFavicon } = appStore()

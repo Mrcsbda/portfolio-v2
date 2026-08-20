@@ -1,4 +1,4 @@
-import type { IAppMutations, IAppState } from "@app/types/store.types";
+import type { IAppMutations, IAppState } from "@app/types";
 
 export const appMutations = (set: any) =>
 ({

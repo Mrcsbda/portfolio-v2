@@ -1,6 +1,6 @@
 import { appStore } from "@app/store";
+import type { ENUM_LANGUAGE } from "@app/types";
 import i18n from "@translation/config.translation";
-import type { ENUM_LANGUAGE } from "@app/types/data.types";
 
 export const changeLanguage = (language: ENUM_LANGUAGE) => {
     const { lang } = appStore()

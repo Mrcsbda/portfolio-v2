@@ -1,4 +1,4 @@
-import type { IAppActions } from "@app/types/store.types";
+import type { IAppActions } from "@app/types";
 import { changeFavicon } from "./change-favicon.action";
 import { changeLanguage } from "./change-language.action";
 import { changeTheme } from "./change-theme.action";

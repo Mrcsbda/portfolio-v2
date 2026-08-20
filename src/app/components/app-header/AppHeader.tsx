@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 //STORE
 import { appStore } from "@app/store";
 // TYPES
-import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from "@app/types/data.types";
+import { ENUM_LANGUAGE, ENUM_THEME, SECTIONS } from "@app/types";
 // COMPONENTS
 import { AppText } from "@app/components";
 // CSS

@@ -1,4 +1,4 @@
-import { ENUM_THEME } from "@app/types/data.types";
+import { ENUM_THEME } from "@app/types";
 
 export const changeFavicon = (theme: string) => {
     if (theme === ENUM_THEME.DARK) {

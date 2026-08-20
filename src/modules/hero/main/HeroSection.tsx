@@ -1,5 +1,5 @@
 // COMPONENTS
-import { SECTIONS } from "@app/types/data.types";
+import { SECTIONS } from "@app/types";
 import { HeroContent, HeroVisual } from "@hero/components";
 //CSS
 import "./HeroSection.css";

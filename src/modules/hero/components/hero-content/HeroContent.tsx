@@ -12,7 +12,7 @@ import { AppBtnContained, AppBtnOutlined, AppText } from "@app/components";
 // STORE
 import { appStore } from "@app/store";
 // TYPES
-import { SECTIONS } from "@app/types/data.types";
+import { SECTIONS } from "@app/types";
 //CSS
 import "./HeroContent.css";
 

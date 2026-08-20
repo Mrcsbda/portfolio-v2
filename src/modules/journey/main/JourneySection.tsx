@@ -14,7 +14,7 @@ export const JourneySection = () => {
   const stepsMeta = [
     {
       date: `2024 – ${t("ACTUAL")}`,
-      animation: "step-one",
+      animation: "STEP-ONE",
       isActive: true,
       show: true,
     },
@@ -26,11 +26,11 @@ export const JourneySection = () => {
     },
     {
       date: "2023 – 2026",
-      animation: "step-two",
+      animation: "STEP-TWO",
       isActive: false,
       show: true,
     },
-    { date: "2023", animation: "step-three", isActive: false, show: true },
+    { date: "2023", animation: "STEP-THREE", isActive: false, show: true },
   ];
 
   const steps = stepsMeta.map((step, index) => ({
