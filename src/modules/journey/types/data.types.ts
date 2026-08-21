@@ -1,0 +1,5 @@
+export enum ENUM_STEP_ANIMATION {
+    STEP_ONE = "STEP-ONE",
+    STEP_TWO = "STEP-TWO",
+    STEP_THREE = "STEP-THREE"
+}

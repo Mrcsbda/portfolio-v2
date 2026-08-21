@@ -1,23 +1,18 @@
-export const ENUM_THEME = {
-    LIGHT: 'light',
-    DARK: 'dark'
-} as const
-
-export type ENUM_THEME = typeof ENUM_THEME[keyof typeof ENUM_THEME]
-
-export const ENUM_LANGUAGE = {
-    EN: 'en',
-    ES: 'es'
-} as const
-
-export type ENUM_LANGUAGE = typeof ENUM_LANGUAGE[keyof typeof ENUM_LANGUAGE]
-
-export const SECTIONS = {
-    HERO: 'HERO',
-    JOURNEY: 'JOURNEY',
-    STACK: 'STACK',
-    PROJECTS: 'PROJECTS',
-    CONTACT: 'CONTACT'
+export enum ENUM_THEME {
+    LIGHT = 'light',
+    DARK = 'dark'
 }
 
-export type SECTIONS = typeof SECTIONS[keyof typeof SECTIONS]
+export enum ENUM_LANGUAGE {
+    EN = 'en',
+    ES = 'es'
+}
+
+
+export enum SECTIONS {
+    HERO = 'HERO',
+    JOURNEY = 'JOURNEY',
+    STACK = 'STACK',
+    PROJECTS = 'PROJECTS',
+    CONTACT = 'CONTACT'
+}

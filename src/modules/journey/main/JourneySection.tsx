@@ -1,12 +1,13 @@
 // COMPONENTS
 import { AppText } from "@/app/components";
-import { JourneyStep } from "../components";
+import { JourneyStep } from "@journey/components";
 // TYPES
+import { SECTIONS } from "@/app/types/data.types";
+import { ENUM_STEP_ANIMATION } from "@journey/types";
+// TRANSLATION
+import { useTranslation } from "react-i18next";
 //CSS
 import "./JourneySection.css";
-// TRANSLATION
-import { SECTIONS } from "@/app/types/data.types";
-import { useTranslation } from "react-i18next";
 
 export const JourneySection = () => {
   const { t } = useTranslation("journey");
@@ -14,7 +15,7 @@ export const JourneySection = () => {
   const stepsMeta = [
     {
       date: `2024 – ${t("ACTUAL")}`,
-      animation: "STEP-ONE",
+      animation: ENUM_STEP_ANIMATION.STEP_ONE,
       isActive: true,
       show: true,
     },
@@ -26,11 +27,16 @@ export const JourneySection = () => {
     },
     {
       date: "2023 – 2026",
-      animation: "STEP-TWO",
+      animation: ENUM_STEP_ANIMATION.STEP_TWO,
       isActive: false,
       show: true,
     },
-    { date: "2023", animation: "STEP-THREE", isActive: false, show: true },
+    {
+      date: "2023",
+      animation: ENUM_STEP_ANIMATION.STEP_THREE,
+      isActive: false,
+      show: true,
+    },
   ];
 
   const steps = stepsMeta.map((step, index) => ({
