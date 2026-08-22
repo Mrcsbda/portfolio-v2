@@ -28,6 +28,9 @@
       "@journey/*": [
         "./src/modules/journey/*"
       ],
+      "@stack/*": [
+        "./src/modules/stack/*"
+      ],
       "@assets/*": [
         "./src/assets/*"
       ],

@@ -1,0 +1,4 @@
+export enum ENUM_STACK_STATE {
+    CURRENT = "CURRENT",
+    LEARNING = "LEARNING"
+}
