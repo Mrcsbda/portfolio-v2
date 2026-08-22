@@ -2,5 +2,11 @@
 import "./JourneyAnimationTwo.css";
 
 export const JourneyAnimationTwo = () => {
-  return <div>Animation 2</div>;
+  return (
+    <div className="journey-animation-two">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  );
 };

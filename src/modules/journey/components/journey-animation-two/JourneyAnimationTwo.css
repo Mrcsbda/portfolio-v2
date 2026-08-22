@@ -1,0 +1,41 @@
+.journey-animation-two {
+  position: relative;
+  width: 140px;
+  height: 120px;
+
+  span {
+    position: absolute;
+    background: var(--glass-strong);
+    border: 1px solid var(--glass-brd);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  span:nth-child(1) {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    top: 8px;
+    left: 10px;
+    animation: float 6s var(--ease) infinite alternate;
+  }
+  span:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 34px;
+    right: 12px;
+    background: var(--accent-soft);
+    animation: float 8s var(--ease) infinite alternate-reverse;
+  }
+  span:nth-child(3) {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    bottom: 1px;
+    left: 48px;
+    animation: float 7s var(--ease) infinite alternate;
+    animation-delay: -2s;
+  }
+}
