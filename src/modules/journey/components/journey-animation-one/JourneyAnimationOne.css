@@ -1,0 +1,76 @@
+.journey-animation-one {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: grid;
+  place-items: center;
+
+  .journey-animation-one__ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid var(--glass-brd);
+  }
+
+  .journey-animation-one__core {
+    position: relative;
+    z-index: 2;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    background: var(--glass-strong);
+    border: 1px solid var(--glass-brd);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+
+    .journey-animation-one__text {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--accent-deep);
+      margin-bottom: 4px;
+    }
+  }
+
+  .journey-animation-one__spin {
+    position: absolute;
+    width: 0;
+    height: 0;
+    animation: spin 11s linear infinite;
+
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow:
+        0 0 3px var(--accent),
+        0 2px 6px rgba(0, 0, 0, 0.18);
+    }
+
+    i:nth-child(1) {
+      transform: translate(-7px, -78px);
+    }
+    i:nth-child(2) {
+      transform: translate(53px, 20px);
+      background: var(--accent-deep);
+    }
+    i:nth-child(3) {
+      transform: translate(-69px, 25px);
+      opacity: 0.7;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

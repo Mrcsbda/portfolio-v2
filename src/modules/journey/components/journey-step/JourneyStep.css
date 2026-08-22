@@ -32,6 +32,11 @@
     color: var(--ink);
     width: max-content;
   }
+
+  .journey-step__animation {
+    display: grid;
+    place-items: center;
+  }
 }
 
 .journey-step__active {
