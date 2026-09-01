@@ -1,5 +1,6 @@
 // COMPONENTS
 import { AppText } from "@/app/components";
+import { OtherProjects, ProjectsInfo } from "../components";
 // TYPES
 import { SECTIONS } from "@/app/types/data.types";
 // TRANSLATION
@@ -12,28 +13,34 @@ export const ProjectsSection = () => {
 
   const projectsMeta = [
     {
-      project: "DICING S.A.S.",
+      project: "Dicing S.A.S.",
       demo: "https://www.dicing.com.co/",
       image:
-        "https://res.cloudinary.com/dd3qzm4in/image/upload/v1787613992/projects/Captura_de_pantalla_2026-08-24_a_las_6.21.44_p._m._v6tpgo.png",
+        "https://res.cloudinary.com/dd3qzm4in/image/upload/v1788298875/Captura_de_pantalla_2026-09-01_a_las_4.40.53_p._m._oazmoa.png",
+      number: "01",
+      technologies: ["Vue.js", "Pinia", "Firebase", "Cloudinary"],
     },
     {
-      project: "EMOSYNC",
+      project: "Emosync",
       demo: "https://emosync-d2f42.web.app/",
       code: "https://github.com/Mrcsbda/Emosync",
       image:
-        "https://res.cloudinary.com/dd3qzm4in/image/upload/v1788295793/Captura_de_pantalla_2026-09-01_a_las_3.48.39_p._m._fiokhw.png",
+        "https://res.cloudinary.com/dd3qzm4in/image/upload/v1788298971/Captura_de_pantalla_2026-09-01_a_las_4.42.34_p._m._hwgkku.png",
+      number: "02",
+      technologies: ["React", "Redux", "Firebase", "Cloudinary"],
     },
     {
-      project: "PETSHOP",
+      project: "Petshop",
       demo: "https://mrcsbda.github.io/Ecommerce/",
       code: "https://github.com/Mrcsbda/Ecommerce",
       image:
-        "https://res.cloudinary.com/dd3qzm4in/image/upload/v1787614034/projects/Captura_de_pantalla_2026-08-24_a_las_6.27.05_p._m._iqdsyj.png",
+        "https://res.cloudinary.com/dd3qzm4in/image/upload/v1788298918/Captura_de_pantalla_2026-09-01_a_las_4.41.41_p._m._hfufho.png",
+      number: "03",
+      technologies: ["HTLM", "CSS", "JavaScript"],
     },
   ];
 
-  const steps = projectsMeta.map((step, index) => ({
+  const projects = projectsMeta.map((step, index) => ({
     ...step,
     subtitleKey: `PROJECTS_INFO.${index}.PROJECT_SUBTITLE`,
     descriptionKey: `PROJECTS_INFO.${index}.PROJECT_DESCRIPTION`,
@@ -54,6 +61,12 @@ export const ProjectsSection = () => {
         children={t("PROJECTS_TITLE")}
         className="projects-section__title"
       />
+      <div className="projects-section__projects-container">
+        {projects.map((project, index) => (
+          <ProjectsInfo key={index} data={project} />
+        ))}
+      </div>
+      <OtherProjects />
     </div>
   );
 };

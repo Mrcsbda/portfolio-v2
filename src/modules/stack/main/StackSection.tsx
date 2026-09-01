@@ -72,6 +72,7 @@ export const StackSection = () => {
         type={"section-title"}
         children={t("STACK_TITLE")}
         className="stack-section__title"
+        textAlign="center"
       />
       <div className="stack-section__items">
         {stack.map((item, index) => (

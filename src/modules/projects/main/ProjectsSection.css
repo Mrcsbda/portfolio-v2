@@ -17,4 +17,14 @@
       background: var(--accent);
     }
   }
+
+  .projects-section__title {
+    margin-bottom: 16px;
+  }
+
+  .projects-section__projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
