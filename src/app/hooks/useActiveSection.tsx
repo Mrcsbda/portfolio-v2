@@ -7,7 +7,7 @@ export const useActiveSection = (sectionIds: SECTIONS[]) => {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.getElementById("header");
-      const headerHeight = header ? header.offsetHeight : 0;
+      const headerHeight = (header ? header.offsetHeight : 0) + 40; // Add some offset to trigger the change a bit earlier
       const scrollPosition = window.scrollY + headerHeight;
 
       let current = sectionIds[0];
@@ -28,5 +28,5 @@ export const useActiveSection = (sectionIds: SECTIONS[]) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionIds]);
 
-  return activeSection;
+  return [activeSection, setActiveSection] as const;
 };

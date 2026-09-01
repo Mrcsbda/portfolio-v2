@@ -1,5 +1,5 @@
 .stack-section {
-  padding-top: 70px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,10 +25,15 @@
 
   .stack-section__items {
     display: flex;
-    gap: 13.5px;
-    max-width: 800px;
+
+    max-width: 850px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+  }
+
+  .stack-section__item-container {
+    display: flex;
     align-items: center;
   }
 
@@ -39,5 +44,7 @@
   .stack-section__sep {
     color: var(--accent);
     font-weight: 700;
+    margin: 0 13.5px;
+    font-size: clamp(19px, 3vw, 30px);
   }
 }

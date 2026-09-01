@@ -21,7 +21,9 @@ export const AppHeader = () => {
     appStore();
   const { t } = useTranslation("header");
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
-  const activeSection = useActiveSection(Object.values(SECTIONS));
+  const [activeSection, setActiveSection] = useActiveSection(
+    Object.values(SECTIONS),
+  );
   const { isMobile } = useValidateScreen();
 
   useEffect(() => {

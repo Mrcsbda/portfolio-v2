@@ -17,7 +17,7 @@ export const AppText = (props: IAppTextProps) => {
 
   const classNameRef = useMemo(() => {
     return `${type} ${className ?? ""}`;
-  }, []);
+  }, [type]);
 
   const styles = useMemo(() => {
     return {

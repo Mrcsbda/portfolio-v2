@@ -1,0 +1,20 @@
+{
+    "PROJECTS": "Projectos",
+    "PROJECTS_TITLE": "Proyectos que he creado",
+    "PROJECTS_INFO": [
+        {
+            "PROJECT_SUBTITLE": "Diseño · Interventoría · Construcción",
+            "PROJECT_DESCRIPTION": "Desarrollé el sitio web corporativo de DICING S.A.S., diseñado para presentar la empresa, sus servicios y proyectos realizados, además de facilitar a potenciales clientes la estimación de nuevos proyectos mediante un formulario. Me encargué del desarrollo frontend y de convertir la información de la empresa en una experiencia web clara y profesional."
+        },
+        {
+            "PROJECT_SUBTITLE": "Plataforma de atención psicológica · Proyecto final",
+            "PROJECT_DESCRIPTION": "Desarrollé una plataforma orientada a facilitar la conexión entre pacientes y profesionales de la psicología, permitiendo gestionar citas y acceder a los servicios de atención de manera sencilla. El proyecto fue desarrollado como trabajo final del Bootcamp de Front End de Makaia, participando en el diseño y desarrollo de la experiencia frontend."
+        },
+        {
+            "PROJECT_SUBTITLE": "E-commerce · Proyecto académico",
+            "PROJECT_DESCRIPTION": "Desarrollé una tienda virtual temática de mascotas como proyecto académico durante el Bootcamp de Front End de Makaia. El proyecto simula la experiencia de un e-commerce, desde la exploración de productos hasta su selección y gestión dentro de la tienda."
+        }
+    ],
+    "DEMO": "Demo",
+    "CODE": "Código"
+}

@@ -7,9 +7,7 @@
   align-self: center;
   margin: 0 auto;
 
-  .hero-visual__circle-top-right,
-  .hero-visual__circle-bottom-left,
-  .hero-visual__ring {
+  .hero-visual__shape {
     position: absolute;
     z-index: 1;
   }

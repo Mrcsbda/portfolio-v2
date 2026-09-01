@@ -75,9 +75,8 @@ export const StackSection = () => {
       />
       <div className="stack-section__items">
         {stack.map((item, index) => (
-          <>
+          <div key={index} className="stack-section__item-container">
             <AppText
-              key={index}
               tag="p"
               type={"tech-text"}
               children={item.value}
@@ -86,7 +85,7 @@ export const StackSection = () => {
             {index !== stack.length - 1 && (
               <span className="stack-section__sep">·</span>
             )}
-          </>
+          </div>
         ))}
       </div>
     </div>

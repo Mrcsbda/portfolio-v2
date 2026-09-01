@@ -1,0 +1,23 @@
+{
+    "PROJECTS": "Projects",
+    "PROJECTS_TITLE": "Projects I have created",
+    "PROJECTS_INFO": [
+        {
+            "PROJECT_TITLE": "DICING S.A.S.",
+            "PROJECT_SUBTITLE": "Design · Supervision · Construction",
+            "PROJECT_DESCRIPTION": "I developed the corporate website for DICING S.A.S., designed to showcase the company, its services, and completed projects, as well as to enable potential clients to request quotes for new projects via a form. I was responsible for the front-end development and for transforming the company’s information into a clear and professional web experience."
+        },
+        {
+            "PROJECT_TITLE": "EMOSYNC",
+            "PROJECT_SUBTITLE": "Psychological Support Platform · Final Project",
+            "PROJECT_DESCRIPTION": "I developed a platform designed to facilitate connections between patients and mental health professionals, making it easy to schedule appointments and access care services. The project was developed as my final project for the Makaia Front-End Bootcamp, where I contributed to the design and development of the front-end experience."
+        },
+        {
+            "PROJECT_TITLE": "PETSHOP",
+            "PROJECT_SUBTITLE": "E-commerce · Academic Project",
+            "PROJECT_DESCRIPTION": "I developed a pet-themed online store as an academic project during the Makaia Front-End Bootcamp. The project simulates the e-commerce experience, from browsing products to selecting and managing them within the store."
+        }
+    ],
+    "DEMO": "Demo",
+    "CODE": "Código"
+}

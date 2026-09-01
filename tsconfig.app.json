@@ -31,6 +31,9 @@
       "@stack/*": [
         "./src/modules/stack/*"
       ],
+      "@projects/*": [
+        "./src/modules/projects/*"
+      ],
       "@assets/*": [
         "./src/assets/*"
       ],

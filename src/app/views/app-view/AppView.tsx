@@ -5,6 +5,7 @@ import { AppHeader } from "@app/components";
 import { AppBackground } from "@app/components/app-background/AppBackground";
 import { HeroSection } from "@hero/main/HeroSection";
 import { JourneySection } from "@journey/main/JourneySection";
+import { ProjectsSection } from "@projects/main/ProjectsSection";
 import { StackSection } from "@stack/main/StackSection";
 // CSS
 import "./AppView.css";
@@ -22,6 +23,7 @@ export const App = () => {
         <HeroSection />
         <JourneySection />
         <StackSection />
+        <ProjectsSection />
       </section>
     </>
   );
