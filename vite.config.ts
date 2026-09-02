@@ -14,6 +14,7 @@ export default defineConfig({
       '@journey': fileURLToPath(new URL('./src/modules/journey', import.meta.url)),
       '@stack': fileURLToPath(new URL('./src/modules/stack', import.meta.url)),
       '@projects': fileURLToPath(new URL('./src/modules/projects', import.meta.url)),
+      '@contact': fileURLToPath(new URL('./src/modules/contact', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@translation': fileURLToPath(new URL('./src/translation', import.meta.url)),
     },

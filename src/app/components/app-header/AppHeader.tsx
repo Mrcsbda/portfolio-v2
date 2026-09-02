@@ -1,7 +1,7 @@
 // REACT
 import { useEffect, useState } from "react";
 //HOOKS
-import { useActiveSection, useValidateScreen } from "@app/hooks";
+import { useValidateScreen } from "@app/hooks";
 //TRANSLATION
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
@@ -21,9 +21,6 @@ export const AppHeader = () => {
     appStore();
   const { t } = useTranslation("header");
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
-  const [activeSection, setActiveSection] = useActiveSection(
-    Object.values(SECTIONS),
-  );
   const { isMobile } = useValidateScreen();
 
   useEffect(() => {
@@ -77,13 +74,7 @@ export const AppHeader = () => {
                 }}
                 className="nav__menu-mobile-item"
               >
-                <AppText
-                  tag="span"
-                  type={
-                    activeSection === option.id ? "nav-item-active" : "nav-item"
-                  }
-                  children={option.label}
-                />
+                <AppText tag="span" type={"nav-item"} children={option.label} />
               </button>
             ))}
           </div>
@@ -158,13 +149,7 @@ export const AppHeader = () => {
             }}
             className="nav__menu-mobile-item"
           >
-            <AppText
-              tag="span"
-              type={
-                activeSection === option.id ? "nav-item-active" : "nav-item"
-              }
-              children={option.label}
-            />
+            <AppText tag="span" type={"nav-item"} children={option.label} />
           </button>
         ))}
       </div>

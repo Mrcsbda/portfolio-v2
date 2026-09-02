@@ -17,7 +17,14 @@ export const AppBtnOutlined = (props: IAppBtnOutlinedProps) => {
       onClick={onClick}
     >
       {icon && icon}
-      {text && <AppText tag="span" type={"btn-text"} children={text} />}
+      {text && (
+        <AppText
+          tag="span"
+          type={"btn-text"}
+          children={text}
+          className="btn-outlined--text"
+        />
+      )}
     </button>
   );
 };
