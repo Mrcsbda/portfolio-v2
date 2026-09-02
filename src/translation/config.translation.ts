@@ -6,7 +6,7 @@ import contact_en from './en/en.contact.json';
 import header_en from './en/en.header.json';
 import hero_en from './en/en.hero.json';
 import journey_en from './en/en.journey.json';
-import projects_en from './en/eN.projects.json';
+import projects_en from './en/en.projects.json';
 import stack_en from './en/en.stack.json';
 
 // imports es
