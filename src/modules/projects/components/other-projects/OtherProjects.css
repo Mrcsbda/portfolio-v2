@@ -1,0 +1,77 @@
+.other-projects {
+  margin-top: 40px;
+
+  .other-projects__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .other-projects__projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+
+    .other-projects__project {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      background: var(--glass-strong);
+      border: 1px solid var(--glass-brd);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-sm);
+      transition:
+        transform 0.25s var(--ease),
+        box-shadow 0.25s var(--ease);
+
+      &:hover {
+        transform: translateY(-2px);
+        cursor: pointer;
+      }
+    }
+
+    .other-projects__project-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 20%;
+      background-color: var(--accent-soft);
+      border: 1px solid var(--glass-brd);
+      transition: transform 0.25s var(--ease);
+      color: var(--accent-deep);
+    }
+
+    .other-projects__project-info {
+      flex: 1;
+
+      .other-projects__project-title {
+        margin-bottom: 4px;
+      }
+
+      .other-projects__project-technologies {
+        display: flex;
+        flex-wrap: wrap;
+
+        .other-projects__project-technology {
+          display: flex;
+          height: 15px;
+          align-items: center;
+          opacity: 0.8;
+
+          .other-projects__project-technology-sep {
+            margin: 0 4px;
+            font-size: 0.79rem;
+            color: var(--ink-2);
+          }
+        }
+      }
+    }
+  }
+}
