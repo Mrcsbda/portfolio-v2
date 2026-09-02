@@ -1,7 +1,7 @@
 //REACT
 import { useEffect } from "react";
 // COMPONENTS
-import { AppHeader } from "@app/components";
+import { AppFooter, AppHeader } from "@app/components";
 import { AppBackground } from "@app/components/app-background/AppBackground";
 import { ContactSection } from "@contact/main/ContactSection";
 import { HeroSection } from "@hero/main/HeroSection";
@@ -26,6 +26,7 @@ export const App = () => {
         <StackSection />
         <ProjectsSection />
         <ContactSection />
+        <AppFooter />
       </section>
     </>
   );
