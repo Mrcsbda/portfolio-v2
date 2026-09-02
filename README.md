@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Portfolio v2 — Mariana Castañeda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal single-page site (static SPA) built with React 19, TypeScript and Vite.
+Includes light/dark theme, bilingual support (ES/EN) and a downloadable CV in both languages.
 
-Currently, two official plugins are available:
+> Repo: https://github.com/Mrcsbda/portfolio-v2
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+| Area            | Tool                                           |
+| --------------- | ---------------------------------------------- |
+| UI              | React 19 + TypeScript                          |
+| Build           | Vite 8                                         |
+| State           | Zustand 5 (with `devtools`)                    |
+| i18n            | i18next + react-i18next                        |
+| Icons           | @tabler/icons-react + Material Symbols Rounded |
+| Styles          | Plain CSS per component + CSS variables        |
+| Lint            | ESLint 9 (flat config) + typescript-eslint     |
+| Package manager | Yarn (`yarn.lock`)                             |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requirements
 
-## Expanding the ESLint configuration
+- Node.js 20+ (required by Vite 8)
+- Yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+yarn install
+yarn dev        # dev server with HMR
+yarn build      # type-check (tsc -b) + production build into dist/
+yarn preview    # serve the production build
+yarn lint       # run ESLint across the project
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── main.tsx                  # entry: mounts <App/> inside I18nextProvider
+├── app/                      # everything shared across the app
+│   ├── common/               # generic helpers and types (store adapter)
+│   ├── components/           # header, footer, background, buttons, text
+│   ├── hooks/                # useValidateScreen (mobile breakpoint < 860px)
+│   ├── store/                # global state (Zustand)
+│   │   ├── app.state.ts      # initial state (reads localStorage)
+│   │   ├── app.mutations.ts  # generic per-field setState
+│   │   ├── actions/          # changeTheme, changeLanguage, changeFavicon
+│   │   └── helpers/          # scrollToSection
+│   ├── types/                # enums (ENUM_THEME, ENUM_LANGUAGE, SECTIONS) and store interfaces
+│   └── views/app-view/       # page composition + global CSS tokens
+├── modules/                  # one folder per page section
+│   ├── hero/                 # intro + animated visual
+│   ├── journey/              # career timeline with per-step animations
+│   ├── stack/                # technologies (current vs. learning)
+│   ├── projects/             # featured projects + other projects
+│   └── contact/              # contact
+└── translation/              # i18next config + JSON per language and namespace
+public/
+├── cv/                       # CV in ES and EN (PDF)
+└── favicon-light.svg | favicon-dark.svg
+```
+
+Every module follows the same pattern: `main/` for the section, `components/` for its internal pieces, and `types/` where needed. Each component keeps its `.css` next to it.
