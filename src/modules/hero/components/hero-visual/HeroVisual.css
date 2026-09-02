@@ -48,6 +48,7 @@
     border: 1px solid var(--glass-brd);
     bottom: 40px;
     left: -55px;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     animation: float 9s var(--ease) infinite alternate-reverse;
     border-radius: 22px;
