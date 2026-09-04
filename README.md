@@ -57,7 +57,6 @@ src/
 │   └── contact/              # contact
 └── translation/              # i18next config + JSON per language and namespace
 public/
-├── cv/                       # CV in ES and EN (PDF)
 └── favicon-light.svg | favicon-dark.svg
 ```
 
